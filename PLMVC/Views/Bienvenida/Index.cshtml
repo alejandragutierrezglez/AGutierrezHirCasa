@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h6>Escribe una función javascript de nombre “Despliega” que muestre el mensaje “Bienvenido al sistema” y el código HTML de un botón que llame a dicha función al darle click.</h6>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bienvenida</title>
+</head>
+<body>
+    <button type="submit" onclick="Despliega()">Llamar Funcion JS</button>
+</body>
+</html>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+        function Despliega() {
+            alert("Bienvenido al Sistema");
+        } 
+    </script>
+
+}
+
+
